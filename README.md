@@ -2,17 +2,18 @@
 npm create vite@latest
 
 √ Project name: ... injection
+
 √ Select a framework: » Vue
+
 √ Select a variant: » TypeScript
 
 Scaffolding project in C:\Files\Code\vue\injection...
 
 Done. Now run:
-  cd injection
-  npm install vue-router
-  npm install -D sass
-  npm install
-  npm run dev
+-  npm install vue-router
+-  npm install -D sass
+-  npm install
+-  npm run dev
 
 # Vue 3 + TypeScript + Vite
 
