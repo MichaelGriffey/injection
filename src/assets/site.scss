@@ -1,0 +1,64 @@
+$blue: #0000ff;
+$red: #ff0000;
+$green: #00ff00;
+$white: #eee;
+
+$navbar:$blue;
+$navbaralt: $white;
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: $white;
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: $navbar;
+    padding-left: 30px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        display: inline-block;
+        color: $navbaralt;
+        text-decoration: none;
+        img {
+            width: 175px;
+            vertical-align: middle;
+        }
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        .nav-item { 
+            a {
+                display: inline-block;
+                padding: 10px 15px;
+                text-decoration: none;
+                color: $navbaralt;
+            }
+            &:hover {
+                background-color: $navbaralt;
+                a {
+                    color: $navbar;
+                }
+            }
+            a.router-link-active {
+                color: $navbar;
+                & {
+                    background-color: $navbaralt;
+                }
+            }
+        }
+    }
+}
